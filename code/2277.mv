@@ -1,8 +1,13 @@
-# if-else: output '1' if same else '0'
+# if-else: output '1' if the two input characters are equal, else '0'
+# Setup ASCII '0' at mem[0] and '1' at mem[1]
 [0]<48
 [1]<49
+# Read first char into A, mark mem[A]=1
 A<I
 [A]<1
+# Read second char into B, load flag C=mem[B]
 B<I
-O<[B]
+C<[B]
+# Output mem[C] -> '0' (C=0) or '1' (C=1)
+O<[C]
 Z<1
