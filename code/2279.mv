@@ -1,0 +1,6 @@
+# echo until EOF (A==0).
+# mem[0]=1 used to trigger halt on EOF.
+[0]<1
+A<I
+Z<[A]
+O<A
